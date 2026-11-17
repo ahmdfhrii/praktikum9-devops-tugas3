@@ -1,4 +1,3 @@
-
 name: Trivy Security Scan
 
 on:
@@ -25,6 +24,6 @@ jobs:
         with:
           image-ref: secure-flask:latest
           format: table
-          exit-code: '0'
-          severity: CRITICAL,HIGH,MEDIUM,LOW
+          exit-code: '1'
+          severity: CRITICAL
 
